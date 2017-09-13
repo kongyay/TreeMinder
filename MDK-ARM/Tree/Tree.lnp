@@ -1,0 +1,28 @@
+--cpu Cortex-M3
+".\tree\startup_stm32f107xc.o"
+".\tree\et_stm32f_arm_kit_lcd.o"
+".\tree\stm32f1xx_hal_msp.o"
+".\tree\main.o"
+".\tree\stm32f1xx_it.o"
+".\tree\system_stm32f1xx.o"
+".\tree\stm32f1xx_hal_gpio_ex.o"
+".\tree\stm32f1xx_hal_cortex.o"
+".\tree\stm32f1xx_hal_rcc.o"
+".\tree\stm32f1xx_hal_spi_ex.o"
+".\tree\stm32f1xx_hal_tim_ex.o"
+".\tree\stm32f1xx_hal_gpio.o"
+".\tree\stm32f1xx_hal.o"
+".\tree\stm32f1xx_hal_pwr.o"
+".\tree\stm32f1xx_hal_dma.o"
+".\tree\stm32f1xx_hal_rcc_ex.o"
+".\tree\stm32f1xx_hal_flash_ex.o"
+".\tree\stm32f1xx_hal_tim.o"
+".\tree\stm32f1xx_hal_flash.o"
+".\tree\stm32f1xx_hal_spi.o"
+".\tree\stm32f1xx_hal_uart.o"
+".\tree\stm32f1xx_hal_rtc.o"
+".\tree\stm32f1xx_hal_rtc_ex.o"
+--library_type=microlib --strict --scatter ".\Tree\Tree.sct"
+--diag_suppress=L6329 --summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Tree.map" -o .\Tree\Tree.axf
