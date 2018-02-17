@@ -1,0 +1,30 @@
+<html>
+<body>
+<script>
+    var APPID= "TreeMinder"; //enter your appid
+    var KEY = "BhdMgDxcvLSxtN8"; //enter your key
+    var SECRET = "uiRG8h2PAhohYr2eSqSZ2lyo4"; //enter your secret
+    var ALIAS = "tree"; //same alias you set on NodeCMU
+
+    function PressButtonOn(){
+        var url = 'https://api.netpie.io/microgear/'+APPID+'/'+ALIAS+'?retain&auth=' +KEY+':'+SECRET;
+        var xmlHttp = new XMLHttpRequest();
+        xmlHttp.open('PUT',url,true);
+        xmlHttp.send('1');
+        window.alert(url);//for debugging purpose
+    }    
+    function PressButtonOff(){
+        var url = 'https://api.netpie.io/microgear/'+APPID+'/'+ALIAS+'?retain&auth=' +KEY+':'+SECRET;
+        var xmlHttp = new XMLHttpRequest();
+        xmlHttp.open('PUT',url,true);
+        xmlHttp.send('0');
+        window.alert(url); //for debugging purpose
+    }    
+</script>
+
+<center>
+<button onclick= "PressButtonOn()" id = "ButtonOn">ON</button>
+<button onclick= "PressButtonOff()" id = "ButtonOff">OFF</button>
+</center>
+</body>
+</html>
