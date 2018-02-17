@@ -19,6 +19,7 @@ Water drinking activity tracker (Computer Interfacing IoT Project)
 - Forest of 7 tree (Show in GUI) represents user's drinking activity of each time of a day (Green, Wither, -) for each week.
 
 # IoT Feature (Arduino C,PHP)
-- Can be controlled by LINE Messaging application by chatting with a bot
+- Can be controlled by LINE Messanging application by chatting with a bot
  - Manually Open / Close tap
  - Set Age,Weight,Wake,Sleep,Name,Clock
+ 
